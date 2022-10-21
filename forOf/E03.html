@@ -9,10 +9,24 @@
 
     //ENTRADA
 
+    let listaLivros = ["A Arte da Guerra", "Sistemas Inteligentes", "Introdução a Programação com JS", "1984", "Use a cabeça: JS"];
+
+let listaTecnico = [];
+let listaFiccao = [];
+
+
 
     //PROCESSAMENTO
-
-
+    for (let livruu of listaLivros) {
+    let pergunta = prompt(`o livro ${livruu} é livro é Técnico(T) ou Ficção(F) `)
+    if (pergunta === `T` ) {
+        listaTecnico.push(livruu);
+    }else{
+        listaFiccao.push(livruu);
+    }
+}
+document.write(`a lista de livros tecnicos é ${listaTecnico}, possui ${listaTecnico.length} livros <br> a lista de livros de ficcao é : ${listaLivros}, possui ${listaFiccao.length} livros`);
+document.write(``);
     //SAÍDA
 
 

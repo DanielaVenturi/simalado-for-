@@ -7,12 +7,22 @@
     */
 
     //ENTRADA
-
-
+const alunos = Number(prompt(`quantos alunos possui`));
+listaMenino = [];
+listaMenina = [];
     //PROCESSAMENTO
-
-
+for (let controle = 1; controle <= alunos; controle++) {
+    let nomes = prompt(`qual o nome do ${controle}° aluno`)
+    let sexo = prompt(`A(O) ${nomes} é menina(F) ou menino(M)?`).toUpperCase
+    if (sexo === `F`) {
+        listaMenina.push(nomes)
+    }else{
+        listaMenino.push(nomes)
+    }
+}
+document.write(`A lista de meninas é : ${listaMenina.sort()} <br>
+A lista d Meninos é : ${listaMenino.sort()} `)
     //SAÍDA
-
+//nao sei pq nao funcionou :(
     
 </script>
